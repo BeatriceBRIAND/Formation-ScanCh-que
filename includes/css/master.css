@@ -1,0 +1,68 @@
+#account:hover {
+    cursor: pointer;
+}
+
+.ui-draggable-dragging{
+    box-shadow:0 0 2px #000;
+    z-index: 100;
+}
+
+#toolbar {
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+.translate_toolbar {
+    transition: width 1s, height 1s, background-color 1s, transform 1s;
+    background-color: #FFCCCC;
+    width: 17vw;
+}
+
+.textActive {
+    color: #4de162;
+}
+
+
+.calendar span{
+    color: white!important;
+    border: 1px solid black!important;
+}
+
+.tui-full-calendar-weekday-schedule-title , .tui-full-calendar-weekday-schedule-title{
+    color: white!important;
+}
+.tui-full-calendar-weekday-schedule-bullet{
+    background-color: white!important;
+}
+
+.tui-full-calendar-popup-detail-date{
+    display: none;
+}
+
+.tui-full-calendar-section-button{
+    display: none;
+}
+
+.bg-perso {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.bg-Travail {
+    background-color: #e22341;
+    color: #fff;
+}
+
+.bg-anniversaire {
+    background-color: #e75555;
+    color: #fff;
+}
+
+.bg-loisir {
+    background-color: #30178d;
+    color: #fff;
+}
+
+.bg-sport {
+    background-color: #0022ff;
+    color: #fff;
+}

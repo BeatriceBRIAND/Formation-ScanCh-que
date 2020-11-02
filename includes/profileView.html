@@ -1,0 +1,89 @@
+<div id="" class="text-light container bg-secondary p-5">
+    <h1 class="text-center">Mon Profil</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="" id="imgProfile" style="max-width: 25em;" class="img-fluid img-thumbnail rounded-circle mx-auto d-block mb-5" alt="">
+            <fieldset>
+                <div class="mb-5">
+                    <p id="profilePseudo"></p>
+                </div>
+                <div class="mb-4">
+                    <p id="profileEmail"></p>
+                </div>
+                <div>
+                    <p id="profileEmailVerified"></p>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-md-6 p-5">
+            <h2 class="text-center">Editer</h2>
+            <label for="newImg">Avatar</label>
+            <div class="row w-100">
+                <div class="col-md-8 form-group mx-auto">
+                    <input type="text" class="form-control" id="newImg" placeholder="URL de l'avatar">
+                    <p class="text-warning" id="alertImg"></p>
+                    <small class="form-text text-muted font-weight-lighter font-italic">ex : https://i.pravatar.cc/350?u=fake@pravatar.fr</small>
+                </div>
+                <div class="col-md-3 form-group mx-auto">
+                    <button class="shadow btn btn-danger" type="button" id="editURL">Changer l'avatar</button>
+                </div>
+            </div>
+
+            <label for="newEmail">Email</label>
+            <div class="row w-100">
+                <div class="col-md-8 form-group mx-auto">
+                    <input type="email" class="form-control" id="newEmail" aria-describedby="emailHelp" placeholder="Entrer la nouvelle adresse mail">
+                    <p class="text-warning" id="alertMail"></p>
+                </div>
+                <div class="col-md-3 form-group mx-auto">
+                    <button class="shadow btn btn-danger" type="button" id="editMail">Changer l'adresse mail</button>
+                </div>
+            </div>
+
+            <label for="newPseudo">Pseudo</label>
+            <div class="row w-100">
+                <div class="col-md-8 form-group mx-auto">
+                    <input type="text" min="6" class="form-control" id="newPseudo" placeholder="Entrer le nouveau pseudo">
+                    <p class="text-warning" id="alertPseudo"></p>
+                </div>
+                <div class="col-md-3 form-group mx-auto">
+                    <button class="shadow btn btn-danger" type="button" id="editPseudo">Changer le pseudo</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="newPassword">Changer de mot de passe</label>
+                <input type="password" min="6" class="form-control" id="newPassword" placeholder="nouveau mot de passe">
+                <input type="password" min="6" class="form-control" id="newPassword2" placeholder="retaper le mot de passe">
+                <p id="alertPassword" class="text-warning"></p>
+                <button class="shadow btn btn-danger" type="button" id="editPassword">Changer</button>
+            </div>
+
+        </div>
+    </div>
+    <p class="float-right shadow btn btn-danger" style="position: absolute;top:8em;right:3em;" id="Deco"></p>
+
+</div>
+<div class="mt-3 text-light container bg-secondary p-5 mb-5">
+    <div class="col-md-10 mx-auto">
+        <h1 class="text-center mb-5">Ma liste de colaborateurs</h1>
+        <div class="row">
+            <div class="col-md-6 px-3">
+                <h2 class="text-light text-center">Liste des utilisateurs</h2>
+                <div class="col-md-10 mx-auto" id="listUser">
+
+
+                </div>
+            </div>
+            <div class="col-md-6 px-3">
+                <h2 class="text-light text-center">Mes collaborateurs</h2>
+                <div class="col-md-10 mx-auto h-100" id="myColab">
+                    <p class="text-light text-center"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--  Chemin depuis index.html car appeler depuis celui-ci  -->
+<script src="includes/profile.js"></script>
